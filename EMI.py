@@ -2,7 +2,7 @@
 #CALCULATE EMI FOR CAR LOANS
 #Defining Variables using data types
 principal=float(input("Enter the loan Amount:"))
-Annual_price=float("Enter the annual interest rate:")
+Annual_price=float(input("Enter the annual interest rate:"))
 loan_years=int(input("Enter the loan in years:"))
 
 #using operators and data types we need to calculate
@@ -16,5 +16,5 @@ loan_months = loan_years*12  # convert the years in to months by multiplication 
 emi=(principal*monthly_price*(1+monthly_price)**loan_months)/((1+monthly_price)**loan_months-1)
 
 #we need output to be like this
-print(f"\nMonthly EMI to be paid: ₹{emi:2f}")  # here we apply maps to get as pair values
+print(f"\nMonthly EMI to be paid: ₹{emi:.2f}")  # here we apply maps to get as pair values
                                             # f indicates formatted string
