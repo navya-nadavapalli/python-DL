@@ -27,7 +27,7 @@ while True:
 
     #here accept yes or no:
     continuation = input("Do you want to enter another score?(yes/no):")
-    if continuation != "yes" or "YES" :
+    if continuation != "yes" :
         break
 
 #calculate average score
